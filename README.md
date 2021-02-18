@@ -16,3 +16,28 @@ Examples of usage:
 - `FileBase:	 foo.txt`
 - `FileName:	 foo`
 - `FileExtension:	 txt`
+
+````
+// Sample program
+
+package main
+
+import (
+	"fmt"
+
+	"github.com/marekkowalczyk/filenames"
+)
+
+func main() {
+
+	filepath := "/Users/user/directory/foo.txt"
+
+	fmt.Println("FilePath:\t", filepath)
+
+	fmt.Println("FileDirectory:\t", filenames.FileDirectory(filepath))
+	fmt.Println("FileBase:\t", filenames.FileBase(filepath))
+	fmt.Println("FileName:\t", filenames.FileName(filepath))
+	fmt.Println("FileExtension:\t", filenames.FileExtension(filepath))
+
+}
+````
